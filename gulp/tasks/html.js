@@ -30,7 +30,7 @@ export const html = () => {
                         append: {
                             key: "_v",
                             cover: 0,
-                            to: ["css", "js"],
+                            to: ["css", "js", "img"],
                         },
                         output: {
                             file: "gulp/version.json",
