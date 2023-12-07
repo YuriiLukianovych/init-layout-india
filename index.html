@@ -4,23 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231207123907">
-    <title>Головна сторінка</title>
+    <link rel="stylesheet" href="css/style.min.css?_v=20231207230026">
+    <title>Main Page</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&_v=20231207230026" rel="stylesheet">
+
+    <!-- Modern Normalize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css?_v=20231207230026"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header class="header">
-    header
+    <div class="container">
+        <a class="logo link" href="/" lang="en">
+            <svg>
+                <use href="img/svgicons/sprite/svg-sprite.svg#house-logo"></use>
+            </svg>
+            <span class="logo__span">Real State</span>
+        </a>
+        <div class="menu">
+            <nav class="navigation">
+                <ul class="navigation__list list">
+                    <li class="navigation__list-item">
+                        <a class="navigation__link link active" href="#">Home</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__link link" href="#">Featured Listing</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__link link" href="#">About</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__link link" href="#">Awards</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__link link" href="#">Resources</a>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a class="navigation__link link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="btn btn--large btn--header" type="button">Work with us</button>
+        </div>
+    </div>
 </header>
     <main>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, vitae rerum. Eum similique pariatur quasi
-            id ipsam ab odio. Molestiae dolore qui porro quasi? Voluptatibus!</span>
-        <img src="img/tiger.jpg?_v=20231207123907" alt="">
+        <section class="hero">
+    <div class="container">
+        <div class="unique-selling-proposition">
+            <h1>Our trusted partner in finding the perfect home.</h1>
+            <p class="main-text">Our commitment is to guide you through every step of the real estate process, making
+                your experience seamless and
+                enjoyable.</p>
+            <div class="features">
+                <ul class="features__list">
+                    <li class="features__item">
+                        <span class="number heading-4">50k+</span>
+                        <span class="txt heading-10">renters</span>
+                    </li>
+                    <li class="features__item">
+                        <span class="number heading-4">10k+</span>
+                        <span class="txt heading-10">properties</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hero__tabs">
+                <div class="hero__tabs-header"></div>
+                <div class="hero__tabs-body">
+                    <form class="hero__form">
+                        <label class="label">
+                            <span class="label__txt">Location</span>
+                            <select class="js-choice" id="location" name="location">
+                                <option value="v1">Bogor, Jawa Barat</option>
+                                <option value="v2">Bogor, Jawa Barat</option>
+                                <option value="v3" selected>Bogor, Jawa Barat</option>
+                                <option value="v4">Bogor, Jawa Barat</option>
+                            </select>
+                        </label>
+
+                        <label class="label">
+                            <span class="label__txt">Type</span>
+                            <select class="js-choice" name="type">
+                                <option value="v1">Home</option>
+                                <option value="v2">Home</option>
+                                <option value="v3" selected>Home</option>
+                                <option value="v4">Home</option>
+                            </select>
+                        </label>
+
+                        <label class="label">
+                            <span class="label__txt">Price Range</span>
+                            <select class="js-choice" name="price">
+                                <option value="v1">$200-$350</option>
+                                <option value="v2">$200-$350</option>
+                                <option value="v3" selected>$200-$350</option>
+                                <option value="v4">$200-$350</option>
+                            </select>
+                        </label>
+
+                        <button class="btn btn--large" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
     <footer class="footer">
     Footer
 </footer>
-    <script src="js/app.min.js?_v=20231207123907"></script>
+    <script src="js/app.min.js?_v=20231207230026"></script>
 </body>
 
 </html>
