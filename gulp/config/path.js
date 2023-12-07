@@ -1,9 +1,9 @@
-// Отримати ім'я папки проекту
-import * as nodePath from 'path';
+// Get Project Root Folder Name
+import * as nodePath from "path";
 const rootFolder = nodePath.basename(nodePath.resolve());
 
-const buildFolder = './dist';
-const srcFolder = './src';
+const buildFolder = "./dist";
+const srcFolder = "./src";
 
 export const path = {
     build: {
@@ -12,7 +12,7 @@ export const path = {
         css: `${buildFolder}/css/`,
         js: `${buildFolder}/js/`,
         images: `${buildFolder}/img/`,
-        fonts: `${buildFolder}/fonts/`
+        fonts: `${buildFolder}/fonts/`,
     },
     src: {
         files: `${srcFolder}/files/**/*.*`,
@@ -34,5 +34,5 @@ export const path = {
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
-    ftp: 'test'
-}
+    ftp: "test",
+};
