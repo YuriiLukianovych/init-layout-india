@@ -1,17 +1,27 @@
 // @import './fonts';
+
+//styles from package Choices.js
+@import "../../node_modules/choices.js/src/styles/choices";
+
+// common styles
+@import "./base/common";
+@import "./base/container";
+@import "./base/text";
+
+// utils
+@import "./utils/variables";
+
+// components
+@import "./components/buttons";
+@import "./components/choices-js-custom-select";
+
+// main layout
 @import "./layout/_header";
+@import "./layout/_hero";
 @import "./layout/_footer";
 
 body {
-    font-family: Veles, sans-serif;
-    font-weight: 700;
-    background-color: #cdcdcc;
-    span {
-        color: #390c03;
-    }
-}
-
-img {
-    display: block;
-    max-width: 800px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: var(--blue-secondary-light-hover);
 }

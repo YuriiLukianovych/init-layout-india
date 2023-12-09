@@ -1,14 +1,80 @@
 .header {
-    height: 100px;
-    background-color: #cdcdcd;
-    border: 5px solid tomato;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    text-transform: uppercase;
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        svg {
+            width: 44px;
+            height: 44px;
+        }
+
+        &__span {
+            color: var(--blue-secondary-dark-normal);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+
+        .navigation {
+            &__list {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+            }
+
+            &__link {
+                color: var(--blue-secondary-light-hover);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.44;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+
+                    width: 100%;
+                    height: 2px;
+                    background-color: var(--org-primary-dark-normal);
+                    border-radius: 2px;
+
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+
+                &.active {
+                    color: var(--org-primary-dark-normal);
+                    font-weight: 500;
+
+                    &::after {
+                        opacity: 1;
+                        visibility: visible;
+                        pointer-events: auto;
+                    }
+                }
+            }
+        }
+    }
 }
