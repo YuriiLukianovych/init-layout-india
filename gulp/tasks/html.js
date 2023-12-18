@@ -10,11 +10,16 @@ export const html = () => {
                 app.plugins.plumber(
                     app.plugins.notify.onError({
                         title: "HTML",
-                        message: "Error: <%= error.message %>",
+                        message: "Error: <@@= error.message @@>",
                     })
                 )
             )
-            .pipe(fileinclude()) // імпорт html-фрагментів(файлів) один в одний директивою @@include() | importing html-fragments (files) into each other with the directive @@include()
+            .pipe(
+                fileinclude({
+                    prefix: "@@",
+                    basepath: "@file",
+                })
+            ) // імпорт html-фрагментів(файлів) один в одний директивою @@include() | importing html-fragments (files) into each other with the directive @@include()
             .pipe(app.plugins.replace(/@img\//g, "img/")) // заміна псевдоніму @img на вірний шлях | replacing the @img alias with the correct path
             // .pipe( // відключив цей плагін, підключати .webp буду ручками з допомогою сніппета | I disabled this plugin, I will connect .webp manually with the help of a snippet
             //   app.plugins.if(
@@ -26,7 +31,7 @@ export const html = () => {
                 app.plugins.if(
                     app.isBuild,
                     versionNumber({
-                        value: "%DT%",
+                        value: "@@DT@@",
                         append: {
                             key: "_v",
                             cover: 0,

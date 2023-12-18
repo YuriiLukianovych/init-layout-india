@@ -5,6 +5,7 @@ import resourcesTabs from "./modules/resources-tab.js";
 import modalWindows from "./modules/modal.js";
 import scrollToAnchors from "./modules/scroll-to-anchors.js";
 import scrollToTop from "./modules/scroll-to-top.js";
+import swiperjs from "./modules/swiperjs.js";
 
 helpFunctions.isWebp();
 
@@ -14,7 +15,4 @@ resourcesTabs();
 modalWindows();
 scrollToAnchors();
 scrollToTop();
-
-// import Swiper, { Navigation, Pagination } from 'swiper';
-
-// const swiper = new Swiper();
+swiperjs();

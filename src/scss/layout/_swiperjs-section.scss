@@ -1,0 +1,23 @@
+.swiperjs {
+    &__content {
+        margin-top: 40px;
+        border: 1px solid red;
+    }
+    &__slider-wrapper {
+        img {
+            max-width: 100%;
+        }
+
+        .swiper {
+            width: 90%;
+            height: 600px;
+        }
+
+        // .dot {
+        //     width: 16px;
+        //     height: 16px;
+        //     border-radius: 50%;
+        //     background-color: tomato;
+        // }
+    }
+}
