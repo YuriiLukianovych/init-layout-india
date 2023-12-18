@@ -3,10 +3,11 @@
 //styles from package Choices.js
 @import "../../node_modules/choices.js/src/styles/choices";
 
-// common styles
+// base styles
 @import "./base/common";
 @import "./base/container";
 @import "./base/text";
+@import "./base/section";
 
 // utils
 @import "./utils/variables";
@@ -14,14 +15,30 @@
 // components
 @import "./components/buttons";
 @import "./components/choices-js-custom-select";
+@import "./components/gallery-label";
+@import "./components/gallery-card-styles";
+@import "./components/gallery-grid";
+@import "./components/social-list";
+@import "./components/logo";
+@import "./components/navigation";
+@import "./components/modal";
+@import "./components/scroll-to-top-button";
 
 // main layout
-@import "./layout/_header";
-@import "./layout/_hero";
-@import "./layout/_footer";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/about-us";
+@import "./layout/property";
+@import "./layout/awards";
+@import "./layout/resources";
+@import "./layout/contact-us";
+@import "./layout/footer";
 
 body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     color: var(--blue-secondary-light-hover);
+    &.is-blocked {
+        overflow: hidden;
+    }
 }

@@ -1,2 +1,77 @@
 .footer {
+    background-color: var(--other-dark-normal);
+
+    .container {
+        padding: 0 58px;
+    }
+    &__content {
+        padding: 48px 0;
+    }
+    &__divider {
+        margin-top: 42px;
+        margin-bottom: 40px;
+        height: 1px;
+        background-color: var(--other-dark-active);
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        margin-bottom: 64px;
+    }
+    &__subscription {
+        max-width: 356px;
+        padding-top: 7px;
+    }
+
+    .subscription {
+        &__title {
+            color: var(--blue-secondary-dark-normal);
+        }
+        &__txt {
+            font-weight: 400;
+        }
+        &__form {
+            max-width: 100%;
+            margin-top: 9px;
+
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        &__input {
+            max-width: 226px;
+            flex-grow: 1;
+            color: var(--blue-secondary-light-hover);
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--other-light-active);
+            background-color: var(--other-light-normal);
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+            transition: var(--transition-250);
+            outline: none;
+
+            &:hover,
+            &:focus {
+                border: 1px solid var(--org-primary-dark-normal);
+            }
+        }
+        &__btn {
+            flex-shrink: 0;
+        }
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__modals-info-menu {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        button {
+            // color: red;
+        }
+    }
 }

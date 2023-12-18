@@ -35,10 +35,14 @@ button {
     outline: none;
     cursor: pointer;
 }
-
-.list {
-    list-style: none;
+.icon20 {
+    width: 20px;
+    height: 20px;
 }
-.link {
-    text-decoration: none;
+.icon24 {
+    width: 24px;
+    height: 24px;
+}
+.dn {
+    display: none;
 }

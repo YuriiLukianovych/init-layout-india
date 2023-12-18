@@ -61,3 +61,9 @@
     font-weight: 500;
     line-height: 18px; /* 128.571% */
 }
+.accent {
+    color: var(--org-primary-dark-normal);
+}
+.accent-bg {
+    background-color: var(--org-primary-dark-normal);
+}

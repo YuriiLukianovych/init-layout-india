@@ -1,0 +1,19 @@
+.property {
+    .section__info {
+        padding-right: 184px;
+        position: relative;
+    }
+    .section__txt {
+        max-width: 700px;
+    }
+
+    &__learn-more-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__gallery {
+        margin-top: 40px;
+    }
+}

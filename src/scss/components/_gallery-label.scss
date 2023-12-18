@@ -1,0 +1,20 @@
+.gallery-label {
+    width: max-content;
+    padding: 8px 16px;
+    border-radius: 8px;
+
+    color: var(--other-light-normal);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 228.571% */
+    letter-spacing: 0.035px;
+
+    &.label-reduced {
+        background-color: var(--org-primary-dark-normal);
+    }
+    &.label-new {
+        background-color: var(--new-label-bg);
+    }
+}

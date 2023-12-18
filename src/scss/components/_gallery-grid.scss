@@ -1,0 +1,10 @@
+.gallery {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 23px;
+    }
+    &__list-item {
+        flex-basis: calc((100% - 2 * 23px) / 3);
+    }
+}

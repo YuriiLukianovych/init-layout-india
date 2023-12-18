@@ -1,0 +1,62 @@
+.g-card {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 25.697px 72.808px rgba(59, 77, 129, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        transform: scale(1.02);
+    }
+    &__img-wrapper {
+        flex-shrink: 0;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__info {
+        padding: 16px;
+        overflow: hidden;
+    }
+
+    &__title {
+        color: var(--blue-secondary-dark-normal);
+    }
+
+    &__subtitle {
+        color: var(--blue-secondary-light-hover);
+        margin-bottom: 14px;
+    }
+
+    &__price {
+        margin-bottom: 14px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        gap: 6.42px;
+
+        color: var(--gray);
+    }
+
+    &__label {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+    }
+}

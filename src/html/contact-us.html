@@ -1,0 +1,153 @@
+<section class="contact-us section" id="contact">
+    <div class="container">
+        <div class="contact-us__wrapper">
+            <div class="section__info">
+                <h2 class="section__title heading-2">Contact Us</h2>
+                <div class="section__txt heading-10">
+                    <p>
+                        Ready to find your dream home or discuss your real
+                        estate goals? Our team at
+                        <a class="link accent" href="#">Real Estate</a> is here
+                        to assist you. Contact us today to schedule a
+                        consultation. We look forward to understanding your
+                        unique needs and tailoring our services to exceed your
+                        expectations. Your perfect property is just a
+                        conversation away.
+                    </p>
+
+                    <button
+                        class="btn btn--arrow contact-us__contact-us-btn"
+                        type="button"
+                    >
+                        Contact Us
+                        <svg>
+                            <use
+                                href="@img/svgicons/sprite/svg-sprite.svg#arrow-right-circle"
+                            ></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="contact-us__content">
+                <ul class="contact-us__info-list">
+                    <li class="contact-us__info-list-item c-info">
+                        <div class="c-info__icon">
+                            <svg class="icon24">
+                                <use
+                                    href="@img/svgicons/sprite/svg-sprite.svg#open-mail"
+                                ></use>
+                            </svg>
+                        </div>
+                        <h4 class="c-info__title heading-3">Email</h4>
+                        <div class="c-info__content heading-7">
+                            realestatepro@gmail.com
+                        </div>
+                    </li>
+                    <li class="contact-us__info-list-item c-info">
+                        <div class="c-info__icon">
+                            <svg class="icon24">
+                                <use
+                                    href="@img/svgicons/sprite/svg-sprite.svg#phone-2"
+                                ></use>
+                            </svg>
+                        </div>
+                        <h4 class="c-info__title heading-3">Phone</h4>
+                        <div class="c-info__content heading-7">
+                            214 985 9000
+                        </div>
+                    </li>
+                    <li class="contact-us__info-list-item c-info">
+                        <div class="c-info__icon">
+                            <svg class="icon24">
+                                <use
+                                    href="@img/svgicons/sprite/svg-sprite.svg#location"
+                                ></use>
+                            </svg>
+                        </div>
+                        <h4 class="c-info__title heading-3">Office</h4>
+                        <div class="c-info__content heading-7">
+                            Mary L. Anderson7800 East Mockingbird LaneSuite
+                            400Dallas, TX 75235
+                        </div>
+                    </li>
+                    <li class="contact-us__info-list-item c-info">
+                        <div class="c-info__icon">
+                            <svg class="icon24">
+                                <use
+                                    href="@img/svgicons/sprite/svg-sprite.svg#grid"
+                                ></use>
+                            </svg>
+                        </div>
+                        <h4 class="c-info__title heading-3">Socials</h4>
+                        <div class="c-info__content heading-7">
+                            @@include('components/social.html', {})
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="contact-us__form-wrapper">
+                    <form class="form" autocomplete="off">
+                        <div class="form__row">
+                            <label for="name" class="form__label heading-11"
+                                >Your name</label
+                            >
+                            <input
+                                class="form__input heading-11"
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="John Doe"
+                            />
+                        </div>
+                        <div class="form__row">
+                            <label for="number" class="form__label heading-11"
+                                >Phone number</label
+                            >
+                            <input
+                                class="form__input heading-11"
+                                type="tel"
+                                name="number"
+                                id="number"
+                                placeholder="20 111 2345 6789"
+                            />
+                        </div>
+                        <div class="form__row">
+                            <label for="email" class="form__label heading-11"
+                                >Email address</label
+                            >
+                            <input
+                                class="form__input heading-11"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="john@gmail.com"
+                            />
+                        </div>
+                        <div class="form__row">
+                            <label for="message" class="form__label heading-11"
+                                >Message</label
+                            >
+                            <textarea
+                                class="form__textarea heading-11"
+                                name="message"
+                                id="message"
+                                placeholder="Type here"
+                            ></textarea>
+                        </div>
+                        <div class="form__row">
+                            <button class="btn form__btn" type="submit">
+                                <span>Submit</span>
+                                <svg class="icon20">
+                                    <use
+                                        href="@img/svgicons/sprite/svg-sprite.svg#line-arrow"
+                                    ></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

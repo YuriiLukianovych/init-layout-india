@@ -1,0 +1,19 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    &__span {
+        color: var(--blue-secondary-dark-normal);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+    }
+}
+
+// See HTML in src/html/components/logo.html
