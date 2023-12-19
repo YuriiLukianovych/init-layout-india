@@ -1,63 +1,132 @@
 .hero {
     &__wrapper {
-        border-radius: 24px;
-        background-color: var(--other-dark-normal, #f7f5f1);
+        // for slider
+        // background-color: var(--other-dark-normal, #f7f5f1);
+        // border-radius: 24px;
+        width: 100%;
+        height: 604px;
+
+        position: relative;
+    }
+
+    &__content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        z-index: 2;
 
         padding: 74px 50px 44px;
-        position: relative;
 
-        .unique-selling-proposition {
-            display: flex;
-            flex-direction: column;
-            max-width: 600px;
-
-            p.main-text {
-                margin-top: 16px;
-                max-width: 586px;
-            }
-
-            .features {
-                margin-top: 28px;
-                &__list {
-                    display: flex;
-                }
-
-                &__item {
-                    position: relative;
-                    padding: 4px 18px;
-
-                    display: flex;
-                    flex-direction: column;
-
-                    &::before {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 100%;
-                        width: 2px;
-                        border-radius: 2px;
-                        background-color: var(
-                            --org-primary-light-normal,
-                            #f0c7a5
-                        );
-                    }
-                    .number {
-                        color: var(--org-primary-dark-normal, #efa163);
-                    }
-                    .txt {
-                        color: var(--blue-secondary-light-hover, #4a566e);
-                    }
-                }
-            }
-        }
+        display: flex;
+        flex-direction: column;
 
         h1 {
             color: var(--blue-secondary-dark-normal, #27334c);
             font-size: 48px;
             font-weight: 600;
             line-height: 1.25; /* 125% */
+            max-width: 600px;
+        }
+
+        p.main-text {
+            margin-top: 16px;
+            max-width: 586px;
+        }
+
+        .features {
+            margin-top: 28px;
+            align-self: flex-start;
+            &__list {
+                display: flex;
+            }
+
+            &__item {
+                position: relative;
+                padding: 4px 18px;
+
+                display: flex;
+                flex-direction: column;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 2px;
+                    border-radius: 2px;
+                    background-color: var(--org-primary-light-normal, #f0c7a5);
+                }
+                .number {
+                    color: var(--org-primary-dark-normal, #efa163);
+                }
+                .txt {
+                    color: var(--blue-secondary-light-hover, #4a566e);
+                }
+            }
+        }
+    }
+
+    &__sliderjs {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: -36px;
+        bottom: -48px;
+
+        z-index: 1;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 36px;
+            bottom: 48px;
+
+            background-color: var(--other-dark-normal, #f7f5f1);
+            border-radius: 24px;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    &__sliderjs-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 36px;
+        bottom: 48px;
+    }
+
+    &__slider-pagination {
+        position: absolute;
+        left: 50% !important;
+        bottom: 12px !important;
+
+        transform: translateX(-50%);
+
+        width: max-content !important;
+
+        .swiper-pagination-bullet {
+            background-color: var(--other-light-normal) !important;
+            opacity: 1 !important;
+            border-radius: 5px;
+            transition: width var(--transition-250);
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 29px !important;
+            background-color: var(--org-primary-dark-normal) !important;
         }
     }
 
@@ -145,6 +214,8 @@
     }
 
     &__house-details {
+        overflow: hidden;
+
         position: absolute;
         right: -18px;
         bottom: -24px;
@@ -152,11 +223,12 @@
 
         border-radius: 12px;
         background-color: var(--other-light-normal-ffffff, #fff);
-        box-shadow: 35px 35px 65px 0px rgba(146, 106, 120, 0.08),
-            35px 35px 65px 0px rgba(146, 106, 120, 0.08);
 
         padding: 17px;
         padding-bottom: 19px;
+
+        box-shadow: 35px 35px 65px 0px rgba(146, 106, 120, 0.08),
+            35px 35px 65px 0px rgba(146, 106, 120, 0.08);
     }
     .details {
         min-width: 244px;
