@@ -10,6 +10,10 @@
     opacity: 0.95;
     pointer-events: all;
 
+    @media screen and (max-width: 767.9px) {
+        display: none;
+    }
+
     svg {
         transform: rotate(-90deg);
         width: 40px;

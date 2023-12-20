@@ -2,22 +2,40 @@
 import Swiper from "swiper/bundle";
 
 const swiperjs = () => {
-    // init Swiper:
-    const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        loop: true,
-        speed: 800,
-        spaceBetween: 100,
-        autoplay: {
-            delay: 3000,
-        },
+    let init = false;
+    let swiper;
 
-        // If we need pagination
-        pagination: {
-            el: ".hero__slider-pagination",
-            clickable: true,
-        },
-    });
+    function swiperCard() {
+        if (window.innerWidth >= 576) {
+            if (!init) {
+                init = true;
+                swiper = new Swiper(".swiper", {
+                    loop: true,
+                    speed: 800,
+                    spaceBetween: 100,
+                    autoplay: {
+                        delay: 3000,
+                    },
+
+                    pagination: {
+                        el: ".hero__slider-pagination",
+                        clickable: true,
+                    },
+                });
+            } else {
+                return;
+            }
+        } else {
+            if (init) {
+                swiper.destroy();
+                init = false;
+            } else {
+                return;
+            }
+        }
+    }
+    swiperCard();
+    window.addEventListener("resize", swiperCard);
 };
 
 export default swiperjs;

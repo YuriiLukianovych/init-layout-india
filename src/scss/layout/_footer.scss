@@ -3,6 +3,10 @@
 
     .container {
         padding: 0 58px;
+
+        @media screen and (max-width: 991.9px) {
+            padding: 0 30px;
+        }
     }
     &__content {
         padding: 48px 0;
@@ -12,13 +16,26 @@
         margin-bottom: 40px;
         height: 1px;
         background-color: var(--other-dark-active);
+
+        @media screen and (max-width: 575.9px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
     &__top {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 1199.9px) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
     &__logo {
         margin-bottom: 64px;
+        @media screen and (max-width: 1199.9px) {
+            margin-bottom: 20px;
+        }
     }
     &__subscription {
         max-width: 356px;
@@ -39,6 +56,11 @@
             display: flex;
             align-items: center;
             gap: 16px;
+
+            @media screen and (max-width: 575.9px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
         &__input {
             max-width: 226px;
@@ -56,6 +78,10 @@
             &:focus {
                 border: 1px solid var(--org-primary-dark-normal);
             }
+
+            @media screen and (max-width: 575.9px) {
+                max-width: 100%;
+            }
         }
         &__btn {
             flex-shrink: 0;
@@ -65,13 +91,52 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (max-width: 575.9px) {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 10px;
+        }
     }
     &__modals-info-menu {
         display: flex;
         align-items: center;
         gap: 35px;
-        button {
-            // color: red;
+
+        @media screen and (max-width: 767.9px) {
+            gap: 12px;
+        }
+
+        li > button {
+            @media screen and (max-width: 767.9px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__rights {
+        @media screen and (max-width: 767.9px) {
+            font-size: 14px;
+        }
+    }
+
+    .navigation__list {
+        @media screen and (max-width: 767.9px) {
+            gap: 20px;
+        }
+        @media screen and (max-width: 575.9px) {
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+    }
+
+    .navigation.footer-nav .navigation__link {
+        @media screen and (max-width: 767.9px) {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+        @media screen and (max-width: 575.9px) {
+            font-size: 11px;
         }
     }
 }

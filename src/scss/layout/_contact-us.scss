@@ -8,10 +8,18 @@
 
         padding: 60px 48px;
         position: relative;
+
+        @media screen and (max-width: 991.9px) {
+            padding: 30px 20px;
+        }
     }
     .section__info {
         padding-right: 184px;
         position: relative;
+
+        @media screen and (max-width: 991.9px) {
+            padding-right: 0;
+        }
     }
     .section__txt {
         max-width: 900px;
@@ -21,6 +29,12 @@
         position: absolute;
         bottom: 17px;
         right: 4px;
+
+        @media screen and (max-width: 991.9px) {
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
     }
 
     &__content {
@@ -33,19 +47,56 @@
 
         padding-left: 62px;
         padding-right: 62px;
-    }
-    &__info-list {
-        flex-basis: calc(100% - 513px - 9px);
-    }
-    &__form-wrapper {
-        flex-basis: 513px;
-        flex-shrink: 0;
+
+        @media screen and (max-width: 1315.9px) {
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 1199.9px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        @media screen and (max-width: 991.9px) {
+            align-items: flex-start;
+        }
+
+        @media screen and (max-width: 767.9px) {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        @media screen and (max-width: 575.9px) {
+            margin-top: 20px;
+        }
     }
 
     &__info-list {
+        flex-basis: calc(100% - 513px - 9px);
+
         display: flex;
         flex-wrap: wrap;
         gap: 42px;
+
+        @media screen and (max-width: 1315.9px) {
+            flex-basis: calc((100% - 20px) / 2);
+
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 991.9px) {
+            flex-direction: column;
+            gap: 36px;
+        }
+
+        @media screen and (max-width: 767.9px) {
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 575.9px) {
+            flex-direction: column;
+            gap: 36px;
+        }
 
         .c-info {
             display: flex;
@@ -61,6 +112,10 @@
                 align-items: center;
                 justify-content: center;
 
+                @media screen and (max-width: 991.9px) {
+                    margin-bottom: 16px;
+                }
+
                 svg {
                     color: var(--other-light-normal);
                 }
@@ -68,6 +123,19 @@
             &__title {
                 color: var(--blue-secondary-dark-normal);
                 margin-bottom: 16px;
+
+                @media screen and (max-width: 991.9px) {
+                    margin-bottom: 8px;
+                }
+            }
+            &__content {
+                @media screen and (max-width: 1199.9px) {
+                    word-break: break-all;
+
+                    .social__list {
+                        gap: 18px;
+                    }
+                }
             }
         }
     }
@@ -78,12 +146,47 @@
                 margin-top: 18px;
             }
         }
+
+        @media screen and (max-width: 1315.9px) {
+            flex-basis: calc((100% - 20px) / 2);
+        }
+
+        @media screen and (max-width: 991.9px) {
+            flex-basis: 100%;
+        }
+
+        @media screen and (max-width: 767.9px) {
+            flex-basis: calc((100% - 20px) / 2);
+        }
+
+        @media screen and (max-width: 575.9px) {
+            flex-basis: 100%;
+        }
     }
 
     &__form-wrapper {
+        flex-basis: 513px;
+        flex-shrink: 0;
+
         border-radius: 12px;
         background-color: var(--other-light-normal);
         padding: 40px;
+
+        @media screen and (max-width: 1315.9px) {
+            flex-basis: calc((100% - 20px) / 2);
+        }
+
+        @media screen and (max-width: 991.9px) {
+            padding: 30px;
+        }
+
+        @media screen and (max-width: 767.9px) {
+            flex-basis: 100%;
+        }
+
+        @media screen and (max-width: 575.9px) {
+            padding: 20px;
+        }
 
         .form {
             width: 100%;
@@ -121,6 +224,10 @@
                 &::placeholder {
                     color: rgba(74, 86, 110, 0.4);
                 }
+
+                @media screen and (max-width: 575.9px) {
+                    padding: 12px;
+                }
             }
             &__textarea {
                 width: 100%;
@@ -143,6 +250,10 @@
 
                 &::placeholder {
                     color: rgba(74, 86, 110, 0.4);
+                }
+
+                @media screen and (max-width: 575.9px) {
+                    padding: 12px;
                 }
             }
             &__btn {

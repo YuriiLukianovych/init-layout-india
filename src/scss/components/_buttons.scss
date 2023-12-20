@@ -24,10 +24,19 @@
     &--large {
         padding: 15px 48px;
         letter-spacing: 0.04px;
+
+        @media screen and (max-width: 575.9px) {
+            padding: 12px 12px;
+        }
     }
     &--header {
         font-size: 18px;
         line-height: 1.44;
+
+        @media screen and (max-width: 575.9px) {
+            font-size: 14px;
+            line-height: 1.2;
+        }
     }
     &--secondary {
         background-color: #96a0b6;

@@ -3,8 +3,19 @@
         display: flex;
         flex-wrap: wrap;
         gap: 23px;
+
+        @media screen and (max-width: 767.9px) {
+            justify-content: center;
+        }
     }
     &__list-item {
         flex-basis: calc((100% - 2 * 23px) / 3);
+
+        @media screen and (max-width: 991.9px) {
+            flex-basis: calc((100% - 23px) / 2);
+        }
+        @media screen and (max-width: 767.9px) {
+            flex-basis: auto;
+        }
     }
 }

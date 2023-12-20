@@ -6,6 +6,7 @@ import modalWindows from "./modules/modal.js";
 import scrollToAnchors from "./modules/scroll-to-anchors.js";
 import scrollToTop from "./modules/scroll-to-top.js";
 import swiperjs from "./modules/swiperjs.js";
+import mobileMenu from "./modules/mobile-menu.js";
 
 helpFunctions.isWebp();
 
@@ -16,3 +17,4 @@ modalWindows();
 scrollToAnchors();
 scrollToTop();
 swiperjs();
+mobileMenu();

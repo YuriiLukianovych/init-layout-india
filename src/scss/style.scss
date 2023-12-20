@@ -41,6 +41,10 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     color: var(--blue-secondary-light-hover);
+
+    width: 100vw;
+    overflow-x: hidden;
+
     &.is-blocked {
         overflow: hidden;
     }
