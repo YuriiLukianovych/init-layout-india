@@ -10,6 +10,10 @@
     }
     &__content {
         padding: 48px 0;
+
+        @media screen and (max-width: 767.9px) {
+            padding: 20px 0;
+        }
     }
     &__divider {
         margin-top: 42px;

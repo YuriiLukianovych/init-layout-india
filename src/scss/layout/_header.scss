@@ -6,6 +6,16 @@
 
         padding-top: 36px;
         padding-bottom: 36px;
+
+        @media screen and (max-width: 575.9px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        @media screen and (max-width: 767.9px) {
+            padding-top: 28px;
+            padding-bottom: 28px;
+        }
     }
 
     .menu {
@@ -97,7 +107,10 @@
         transform: translateX(100%);
 
         @media screen and (max-width: 575.9px) {
-            top: 113px;
+            top: 81px;
+        }
+        @media screen and (max-width: 767.9px) {
+            top: 112px;
         }
 
         @media screen and (min-width: 992px) {

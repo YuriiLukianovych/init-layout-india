@@ -23,5 +23,9 @@
 
     &__gallery {
         margin-top: 40px;
+
+        @media screen and (max-width: 575.9px) {
+            margin-top: 20px;
+        }
     }
 }

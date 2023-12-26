@@ -357,12 +357,10 @@
             width: 600px;
             height: 400px;
 
-            right: -45px;
+            right: 0;
         }
 
         @media screen and (max-width: 767.9px) {
-            // width: 540px;
-            // height: 360px;
             width: 100%;
             height: auto;
             right: 0px;
@@ -400,13 +398,21 @@
         }
 
         @media screen and (max-width: 767.9px) {
-            right: -12px;
+            right: 6px;
             bottom: -24px;
             transform: translateY(0);
+
+            padding: 10px;
         }
     }
     .details {
         min-width: 244px;
+
+        @media screen and (max-width: 767.9px) {
+            min-width: auto;
+            max-width: 234px;
+        }
+
         &__title {
             margin-bottom: 1px;
             color: #1f2744;
