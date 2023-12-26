@@ -37,10 +37,10 @@ const swiper2js = () => {
     });
 
     // slider2 width:
-    swiperCard();
-    window.addEventListener("resize", swiperCard);
+    swiperCard2();
+    window.addEventListener("resize", swiperCard2);
 
-    function swiperCard() {
+    function swiperCard2() {
         if (container.offsetWidth >= 1316) {
             slider2.style.width = container.offsetWidth * 0.44 - 120 + "px";
         } else if (container.offsetWidth >= 1200) {
