@@ -97,20 +97,22 @@
         background-color: var(--other-dark-normal);
 
         position: fixed;
-        top: 128px;
+        top: 122px;
         left: 0;
+        bottom: 0;
+        right: 0;
         z-index: 100;
-        max-height: calc(100vh - 128px);
         overflow-y: auto;
 
         transition: var(--transition-250);
         transform: translateX(100%);
 
-        @media screen and (max-width: 575.9px) {
-            top: 81px;
-        }
         @media screen and (max-width: 767.9px) {
             top: 112px;
+        }
+
+        @media screen and (max-width: 575.9px) {
+            top: 96px;
         }
 
         @media screen and (min-width: 992px) {
@@ -119,6 +121,10 @@
 
         &.visible {
             transform: translateX(0);
+        }
+
+        .container {
+            align-items: flex-start;
         }
 
         &__list {
