@@ -48,7 +48,7 @@ const swiper2js = () => {
         } else if (container.offsetWidth >= 992) {
             slider2.style.width = container.offsetWidth * 0.44 - 60 + "px";
         } else if (container.offsetWidth >= 768) {
-            slider2.style.width = container.offsetWidth * 0.66 - 60 + "px";
+            slider2.style.width = container.offsetWidth - 80 - 60 + "px";
         } else if (container.offsetWidth >= 576) {
             slider2.style.width = container.offsetWidth * 0.8 - 12 + "px";
         } else {
