@@ -18,11 +18,7 @@
         border-radius: 12px 12px 0 0;
         overflow: hidden;
         img {
-            max-width: 100%;
-
-            @media screen and (max-width: 767.9px) {
-                width: 100%;
-            }
+            width: 100%;
         }
     }
 

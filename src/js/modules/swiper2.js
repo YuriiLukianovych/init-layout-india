@@ -3,7 +3,9 @@ import Swiper from "swiper/bundle";
 
 const swiper2js = () => {
     const slider2 = document.querySelector(".swiper2");
-    const container = document.querySelector(".awards").firstElementChild;
+
+    const awardsSection = document.querySelector(".awards");
+    const container = awardsSection ? awardsSection.firstElementChild : null;
 
     //second slider in Awards Section
     const swiper2 = new Swiper(".swiper2", {
@@ -41,6 +43,9 @@ const swiper2js = () => {
     window.addEventListener("resize", swiperCard2);
 
     function swiperCard2() {
+        if (!container || !slider2) {
+            return;
+        }
         if (container.offsetWidth >= 1316) {
             slider2.style.width = container.offsetWidth * 0.44 - 120 + "px";
         } else if (container.offsetWidth >= 1200) {
