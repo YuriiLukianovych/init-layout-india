@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=@@DT@@">
+    <title>Detail Page</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500&display=swap&_v=@@DT@@"
+        rel="stylesheet">
+
+    <!-- Modern Normalize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css?_v=@@DT@@"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <a class="logo" href="/" lang="en">
+    <svg>
+        <use href="img/svgicons/sprite/svg-sprite.svg#house-logo"></use>
+    </svg>
+    <span class="logo__span">Real State</span>
+</a>
+        <div class="menu">
+            <nav class="navigation ">
+    <ul class="navigation__list">
+        <li class="navigation__list-item">
+            <a class="navigation__link active" href="#" data-link-to-anchor>Home</a>
+        </li>
+        <li class="navigation__list-item">
+            <a class="navigation__link" href="#property" data-link-to-anchor>Featured Listing</a>
+        </li>
+        <li class="navigation__list-item">
+            <a class="navigation__link" href="#about" data-link-to-anchor>About</a>
+        </li>
+        <li class="navigation__list-item">
+            <a class="navigation__link" href="#awards" data-link-to-anchor>Awards</a>
+        </li>
+        <li class="navigation__list-item">
+            <a class="navigation__link" href="#resources" data-link-to-anchor>Resources</a>
+        </li>
+        <li class="navigation__list-item">
+            <a class="navigation__link" href="#contact" data-link-to-anchor>Contact Us</a>
+        </li>
+    </ul>
+</nav>
+
+            <button class="btn btn--large btn--header" type="button">
+                Work with us
+            </button>
+
+            <div class="burger-menu-controls">
+                <button class="burger-menu-btn clear-btn" type="button" data-mobile-menu-open>
+                    <svg>
+                        <use href="img/svgicons/sprite/svg-sprite.svg#menu-2"></use>
+                    </svg>
+                </button>
+
+                <button class="burger-menu-btn clear-btn btn-hidden" type="button" data-mobile-menu-close>
+                    <svg>
+                        <use href="img/svgicons/sprite/svg-sprite.svg#cross-2-icon"></use>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="container">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__list-item">
+                    <a class="mobile-menu__link heading-2 active" href="#" data-link-to-anchor>Home</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a class="mobile-menu__link heading-2" href="#property" data-link-to-anchor>Featured Listing</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a class="mobile-menu__link heading-2" href="#about" data-link-to-anchor>About</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a class="mobile-menu__link heading-2" href="#awards" data-link-to-anchor>Awards</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a class="mobile-menu__link heading-2" href="#resources" data-link-to-anchor>Resources</a>
+                </li>
+                <li class="mobile-menu__list-item">
+                    <a class="mobile-menu__link heading-2" href="#contact" data-link-to-anchor>Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <main>
+        <section class="detail-page">
+    <div class="container">
+
+        <div class="detail-page__back">
+            <a class="clear-btn heading-9 back-btn" href="/">
+                <svg width="24" height="24">
+                    <use href="img/svgicons/sprite/svg-sprite.svg#arrow-back"></use>
+                </svg>
+                <span>Back To Search</span>
+            </a>
+        </div>
+
+        <div class="detail">
+            <div class="detail__main house">
+
+                <div class="house__image">
+                    <img src="img/detail-page/main-01.jpg?_v=@@DT@@" alt="house image">
+
+                    <div class="house__image-label gallery-label label-new">New Property</div>
+
+                    <div class="house__image-controls">
+                        <ul>
+                            <li>
+                                <button class="house__image-controls-btn clear-btn heading-11" type="button">
+                                    <svg>
+                                        <use href="img/svgicons/sprite/svg-sprite.svg#plan"></use>
+                                    </svg>
+                                    <span>Planimetry</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="house__image-controls-btn clear-btn heading-11" type="button">
+                                    <svg>
+                                        <use href="img/svgicons/sprite/svg-sprite.svg#vr"></use>
+                                    </svg>
+                                    <span>Virtual Tour</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="house__image-controls-btn clear-btn heading-11" type="button">
+                                    <svg>
+                                        <use href="img/svgicons/sprite/svg-sprite.svg#video"></use>
+                                    </svg>
+                                    <span>See Video</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="house__header">
+                    <h1 class="house__title heading-2">Riverbend Retreat</h1>
+                    <div class="house__location">
+                        <svg>
+                            <use href="img/svgicons/sprite/svg-sprite.svg#location-2"></use>
+                        </svg>
+                        <span>3 Leame Close, Hull, HU3 6ND</span>
+                    </div>
+                    <ul class="house__controls">
+                        <li>
+                            <button class="like-btn clear-btn" type="button">
+                                <svg class="icon24">
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#heart"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="share-btn clear-btn" type="button">
+                                <svg class="icon20">
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#share"></use>
+                                </svg>
+                                <span>Share</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="house__list">
+                        <li class="house__list-item">
+                            <h4 class="heading-11">Bedrooms</h4>
+                            <div class="house__list-info">
+                                <svg>
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#bed"></use>
+                                </svg>
+                                <span class="heading-9">7</span>
+                            </div>
+                        </li>
+                        <li class="house__list-item">
+                            <h4 class="heading-11">Bathrooms</h4>
+                            <div class="house__list-info">
+                                <svg>
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#bathroom"></use>
+                                </svg>
+                                <span class="heading-9">3</span>
+                            </div>
+                        </li>
+                        <li class="house__list-item">
+                            <h4 class="heading-11">Space for cars</h4>
+                            <div class="house__list-info">
+                                <svg>
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#car"></use>
+                                </svg>
+                                <span class="heading-9">4</span>
+                            </div>
+                        </li>
+                        <li class="house__list-item">
+                            <h4 class="heading-11">Square Area</h4>
+                            <div class="house__list-info">
+                                <svg>
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#slide-size"></use>
+                                </svg>
+                                <span class="heading-9">438m2</span>
+                            </div>
+                        </li>
+                        <li class="house__list-item">
+                            <h4 class="heading-11">Environment</h4>
+                            <div class="house__list-info">
+                                <svg>
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#brush"></use>
+                                </svg>
+                                <span class="heading-9">Modern Loft</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="h-divider"></div>
+
+                <div class="h-desc">
+                    <h3 class="h-desc__caption heading-5">Description</h3>
+                    <p class="h-desc__txt heading-10">Maecenas dictum neque ultricies nisi vehicula, eu scelerisque
+                        mauris
+                        tristique. Nam at tortor ornare, placerat nunc
+                        malesuada, semper sapien. Ut ullamcorper, sem vitae sollicitudin cursus, lacus tellus
+                        pretium
+                        quam, ac euismod velit
+                        neque quis justo. Vestibulum sed augue massa. Cras ut pellentesque justo, eget commodo
+                        risus.
+                        Fusce scelerisque mi quis
+                        pharetra ultrices.</p>
+
+                    <div class="h-desc__btns">
+                        <button class="btn btn--light-accent" type="button">
+                            <svg class="icon20">
+                                <use href="img/svgicons/sprite/svg-sprite.svg#heart"></use>
+                            </svg>
+                            <span class="heading-11">Save for later</span>
+                        </button>
+                        <button class="btn" type="button">
+                            <svg class="icon20">
+                                <use href="img/svgicons/sprite/svg-sprite.svg#mail"></use>
+                            </svg>
+                            <span class="heading-11">Contact agent</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="h-divider"></div>
+
+                <div class="house__facilities facilities">
+                    <h3 class="facilities__title heading-5">Public Facilities</h3>
+
+                    <div class="facilities__tabs">
+                        <div class="facilities__tabs-header">
+                            <ul class="facilities__tabs-list">
+                                <li>
+                                    <button class="facilities__btn clear-btn heading-11 active"
+                                        type="button">Nearby</button>
+                                </li>
+                                <li>
+                                    <button class="facilities__btn clear-btn heading-11"
+                                        type="button">Transportation</button>
+                                </li>
+                                <li>
+                                    <button class="facilities__btn clear-btn heading-11" type="button">Shopping</button>
+                                </li>
+                                <li>
+                                    <button class="facilities__btn clear-btn heading-11" type="button">Health</button>
+                                </li>
+                                <li>
+                                    <button class="facilities__btn clear-btn heading-11" type="button">Catering</button>
+                                </li>
+                                <li>
+                                    <button class="facilities__btn clear-btn heading-11" type="button">More</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="facilities__tabs-body">
+                            <ul class="facilities__list">
+                                <li class="facilities__list-item">
+                                    <div class="left">
+                                        <svg class="icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#bus"></use>
+                                        </svg>
+                                        <span class="type heading-9">Bus Stop</span>
+                                    </div>
+                                    <div class="right">
+                                        <span class="adress">Ternm, Pod Kastons</span>
+                                        <span class="distance heading-5">1,8 km</span>
+                                    </div>
+                                </li>
+                                <li class="facilities__divider"></li>
+                                <li class="facilities__list-item">
+                                    <div class="left">
+                                        <svg class="icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#coffee"></use>
+                                        </svg>
+                                        <span class="type heading-9">Cafe / Pub</span>
+                                    </div>
+                                    <div class="right">
+                                        <span class="adress">Veslo Cafebar</span>
+                                        <span class="distance heading-5">3,2 km</span>
+                                    </div>
+                                </li>
+                                <li class="facilities__divider"></li>
+                                <li class="facilities__list-item">
+                                    <div class="left">
+                                        <svg class="icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#food"></use>
+                                        </svg>
+                                        <span class="type heading-9">Groceries</span>
+                                    </div>
+                                    <div class="right">
+                                        <span class="adress">Jednota COOP</span>
+                                        <span class="distance heading-5">4,3 km</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <li class="facilities__divider d-column"></li>
+                            <ul class="facilities__list">
+                                <li class="facilities__list-item">
+                                    <div class="left">
+                                        <svg class="icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#chef-hat"></use>
+                                        </svg>
+                                        <span class="type heading-9">Restaurant</span>
+                                    </div>
+                                    <div class="right">
+                                        <span class="adress">Ternm, Pod Kastons</span>
+                                        <span class="distance heading-5">1,8 km</span>
+                                    </div>
+                                </li>
+                                <li class="facilities__divider"></li>
+                                <li class="facilities__list-item">
+                                    <div class="left">
+                                        <svg class="icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#mail"></use>
+                                        </svg>
+                                        <span class="type heading-9">Post office</span>
+                                    </div>
+                                    <div class="right">
+                                        <span class="adress">Veslo Cafebar</span>
+                                        <span class="distance heading-5">3,2 km</span>
+                                    </div>
+                                </li>
+                                <li class="facilities__divider"></li>
+                                <li class="facilities__list-item">
+                                    <div class="left">
+                                        <svg class="icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#doctor"></use>
+                                        </svg>
+                                        <span class="type heading-9">Doctor</span>
+                                    </div>
+                                    <div class="right">
+                                        <span class="adress">Jednota COOP</span>
+                                        <span class="distance heading-5">4,3 km</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-divider"></div>
+
+                <div class="house__leasing-agent leasing-agent">
+                    <h3 class="leasing-agent__title heading-5">Listing by Agent</h3>
+                    <div class="leasing-agent__card">
+                        <div class="leasing-agent__info">
+                            <div class="leasing-agent__photo">
+                                <img src="img/detail-page/agent-01.jpg?_v=@@DT@@" alt="agent photo">
+                            </div>
+                            <div class="leasing-agent__name">
+                                <span class="name">Albert Flores</span>
+                                <span class="position">Leasing Agent</span>
+                            </div>
+                        </div>
+                        <ul class="leasing-agent__communication">
+                            <li>
+                                <button class="leasing-agent__btn heading-9" type="button">Ask Question</button>
+                            </li>
+                            <li>
+                                <button class="leasing-agent__btn heading-9" type="button">Contact Agent</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="house__agents agents">
+                    <h3 class="agents__title heading-5">Our Agents</h3>
+                    <div class="agents__box">
+                        <div class="agents__card">
+                            <div class="agents__photo">
+                                <img src="img/detail-page/agent-01.jpg?_v=@@DT@@" alt="agent photo">
+                            </div>
+                            <span class="agents__name heading-7">Albert Flores</span>
+                            <span class="agents__position heading-11">Leasing Agent</span>
+                            <p class="agents__email">
+                                <svg class="icon24">
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#mail"></use>
+                                </svg>
+                                <span class="heading-9">email_email@gmail.com</span>
+                            </p>
+                            <p class="agents__phone">
+                                <svg class="icon24">
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#phone-3"></use>
+                                </svg>
+                                <span class="heading-9">+420 765 765 097</span>
+                            </p>
+                        </div>
+                        <div class="agents__divider"></div>
+                        <div class="agents__card">
+                            <div class="agents__photo">
+                                <img src="img/detail-page/agent-02.jpg?_v=@@DT@@" alt="agent photo">
+                            </div>
+                            <span class="agents__name heading-7">Melinda Peck</span>
+                            <span class="agents__position heading-11">Leasing Agent</span>
+                            <p class="agents__email">
+                                <svg class="icon24">
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#mail"></use>
+                                </svg>
+                                <span class="heading-9">email_email@gmail.com</span>
+                            </p>
+                            <p class="agents__phone">
+                                <svg class="icon24">
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#phone-3"></use>
+                                </svg>
+                                <span class="heading-9">+420 765 765 097</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-divider"></div>
+
+                <div class="house__map map">
+                    <h3 class="map__title heading-5">Map View</h3>
+                    <div class="map__body">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.0622623648!2d-74.30932711162491!3d40.69701928803442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1705511205099!5m2!1suk!2sua"
+                            style="border: none;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="detail__sidebar">
+                <ul class="detail__images-list">
+                    <li>
+                        <img src="img/detail-page/secondary-01.jpg?_v=@@DT@@" alt="house image">
+                    </li>
+                    <li>
+                        <img src="img/detail-page/secondary-02.jpg?_v=@@DT@@" alt="house image">
+                    </li>
+                </ul>
+
+                <div class="form-wrapper">
+                    <form class="price-form">
+                        <div class="price-form__price">
+                            <span class="price-form__label heading-11">Price</span>
+                            <span class="price-form__number heading-2">$581,760</span>
+                            <p class="price-form__txt heading-11">Rent price <span>$4867</span> /month</p>
+                        </div>
+                        <div class="h-divider"></div>
+                        <h2 class="heading-5">Request a home tour</h2>
+                        <div class="price-form__tabs">
+                            <ul class="price-form__tabs-list">
+                                <li class="active">
+                                    <svg class="icon20">
+                                        <use href="img/svgicons/sprite/svg-sprite.svg#vr"></use>
+                                    </svg>
+                                    <span class="heading-10">Virtual</span>
+                                </li>
+                                <li>
+                                    <svg class="icon20">
+                                        <use href="img/svgicons/sprite/svg-sprite.svg#comment"></use>
+                                    </svg>
+                                    <span class="heading-10">In Person</span>
+                                </li>
+                            </ul>
+
+                            <div class="price-form__tabs-body">
+                                <div class="price-form__vr-content">
+                                    <div class="date-wrapper">
+                                        <input class="date-input" type="date">
+                                        <div class="date-info">
+                                            <svg class="icon20">
+                                                <use href="img/svgicons/sprite/svg-sprite.svg#calendar"></use>
+                                            </svg>
+                                            <span class="price-form__date-value heading-11">20.12.23</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn form__btn" type="submit">
+                            <span>Request a tour</span>
+                            <svg class="icon20">
+                                <use href="img/svgicons/sprite/svg-sprite.svg#line-arrow"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="form-wrapper">
+                    <form class="more-form form">
+                        <div class="form__row">
+                            <label for="name2" class="form__label heading-11">Name</label>
+                            <input class="form__input heading-11" type="text" name="name2" id="name2"
+                                placeholder="Realestate">
+                        </div>
+                        <div class="form__row">
+                            <label for="email2" class="form__label heading-11">Email address</label>
+                            <input class="form__input heading-11" type="email" name="email2" id="email2"
+                                placeholder="realestate@gmail.com">
+                        </div>
+                        <div class="form__row">
+                            <label for="message2" class="form__label heading-11">Message</label>
+                            <textarea class="form__textarea heading-11" name="message2" id="message2"
+                                placeholder="Your message"></textarea>
+                        </div>
+                        <div class="form__row">
+                            <button class="btn form__btn" type="submit">
+                                <span>Submit</span>
+                                <svg class="icon20">
+                                    <use href="img/svgicons/sprite/svg-sprite.svg#line-arrow"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="h-divider" style="margin-top: 32px;"></div>
+        <div class="similar-list">
+            <h2 class="similar-list__title heading-2">Similiar Listing</h2>
+            <div class="gallery">
+                <ul class="gallery__list">
+                    <li class="gallery__list-item">
+                        <a href="./detail.html" class="g-card">
+                            <div class="g-card__img-wrapper">
+                                <img src="img/property/01.jpg?_v=@@DT@@" alt="gallery image">
+                            </div>
+                            <div class="g-card__info">
+                                <h3 class="g-card__title heading-5">Beverly Sprintd</h3>
+                                <h4 class="g-card__subtitle heading-10">Jawa Barat, 224B</h4>
+                                <p class="g-card__price accent heading-5">$ 349,000</p>
+                                <ul class="g-card__list">
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#bed"></use>
+                                        </svg>
+                                        <span>6</span>
+                                    </li>
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#bathroom"></use>
+                                        </svg>
+                                        <span>4</span>
+                                    </li>
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#car"></use>
+                                        </svg>
+                                        <span>3</span>
+                                    </li>
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#slide-size"></use>
+                                        </svg>
+                                        <span>317m2</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="g-card__label gallery-label label-reduced">Just reduced</div>
+                        </a>
+                    </li>
+                    <li class="gallery__list-item">
+                        <a href="./detail.html" class="g-card">
+                            <div class="g-card__img-wrapper">
+                                <img src="img/property/02.jpg?_v=@@DT@@" alt="gallery image">
+                            </div>
+                            <div class="g-card__info">
+                                <h3 class="g-card__title heading-5">Palm Harbor</h3>
+                                <h4 class="g-card__subtitle heading-10">Lake Selvila, 1B21</h4>
+                                <p class="g-card__price accent heading-5">$ 313,050</p>
+                                <ul class="g-card__list">
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#bed"></use>
+                                        </svg>
+                                        <span>4</span>
+                                    </li>
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#bathroom"></use>
+                                        </svg>
+                                        <span>3</span>
+                                    </li>
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#car"></use>
+                                        </svg>
+                                        <span>2</span>
+                                    </li>
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#slide-size"></use>
+                                        </svg>
+                                        <span>303m2</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="g-card__label gallery-label label-reduced dn">Just reduced</div>
+                        </a>
+                    </li>
+                    <li class="gallery__list-item">
+                        <a href="./detail.html" class="g-card">
+                            <div class="g-card__img-wrapper">
+                                <img src="img/property/03.jpg?_v=@@DT@@" alt="gallery image">
+                            </div>
+                            <div class="g-card__info">
+                                <h3 class="g-card__title heading-5">Faulkner Avenev Towns</h3>
+                                <h4 class="g-card__subtitle heading-10">Woodland St. 909</h4>
+                                <p class="g-card__price accent heading-5">$ 581,760</p>
+                                <ul class="g-card__list">
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#bed"></use>
+                                        </svg>
+                                        <span>7</span>
+                                    </li>
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#bathroom"></use>
+                                        </svg>
+                                        <span>3</span>
+                                    </li>
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#car"></use>
+                                        </svg>
+                                        <span>4</span>
+                                    </li>
+                                    <li class="g-card__list-item heading-9">
+                                        <svg class="accent icon24">
+                                            <use href="img/svgicons/sprite/svg-sprite.svg#slide-size"></use>
+                                        </svg>
+                                        <span>438m2</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="g-card__label gallery-label label-new">New Property</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <div class="footer__top">
+                <div class="footer__navigation">
+                    <div class="footer__logo">
+                        <a class="logo" href="/" lang="en">
+    <svg>
+        <use href="img/svgicons/sprite/svg-sprite.svg#house-logo"></use>
+    </svg>
+    <span class="logo__span">Real State</span>
+</a>
+                    </div>
+                    <nav class="navigation footer-nav">
+    <ul class="navigation__list">
+        <li class="navigation__list-item">
+            <a class="navigation__link active" href="#" data-link-to-anchor>Home</a>
+        </li>
+        <li class="navigation__list-item">
+            <a class="navigation__link" href="#property" data-link-to-anchor>Featured Listing</a>
+        </li>
+        <li class="navigation__list-item">
+            <a class="navigation__link" href="#about" data-link-to-anchor>About</a>
+        </li>
+        <li class="navigation__list-item">
+            <a class="navigation__link" href="#awards" data-link-to-anchor>Awards</a>
+        </li>
+        <li class="navigation__list-item">
+            <a class="navigation__link" href="#resources" data-link-to-anchor>Resources</a>
+        </li>
+        <li class="navigation__list-item">
+            <a class="navigation__link" href="#contact" data-link-to-anchor>Contact Us</a>
+        </li>
+    </ul>
+</nav>
+                </div>
+                <div class="footer__subscription subscription">
+                    <h4 class="subscription__title heading-7">Newsletter</h4>
+                    <p class="subscription__txt heading-11">
+                        Keep up on our always evolving product features and
+                        technology. Enter your e-mail and subscribe to our
+                        newsletter.
+                    </p>
+                    <form class="subscription__form" autocomplete="off">
+                        <input class="subscription__input heading-10" type="email" name="f-email"
+                            placeholder="Your email">
+                        <button class="btn subscription__btn" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__bottom">
+                <p class="footer__rights heading-9">
+                    &copy; 2023 Real State. All rights reserved.
+                </p>
+                <ul class="footer__modals-info-menu">
+                    <li>
+                        <button class="clear-btn heading-9" type="button" data-id="terms" data-modal-open>
+                            Terms
+                        </button>
+                    </li>
+                    <li>
+                        <button class="clear-btn heading-9" type="button" data-id="privacy" data-modal-open>
+                            Privacy
+                        </button>
+                    </li>
+                    <li>
+                        <button class="clear-btn heading-9" type="button" data-id="cookies" data-modal-open>
+                            Cookies
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    <button class="clear-btn scrollToTop scrollToTop__hidden" type="button">
+    <svg>
+        <use href="img/svgicons/sprite/svg-sprite.svg#arrow-right-circle"></use>
+    </svg>
+</button>
+    <div class="backdrop is-hidden" data-modal data-id="terms">
+    <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+            <svg class="icon-close">
+                <use href="img/svgicons/sprite/svg-sprite.svg#cross-icon"></use>
+            </svg>
+        </button>
+
+        <!-- Content -->
+        <h2>Terms</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ducimus excepturi id velit fugit suscipit beatae.
+            Iusto, voluptatum. Voluptatibus, voluptatum! Inventore ex ut tempore corporis tenetur, error ducimus. Dolor
+            autem recusandae tempore? At corporis unde debitis adipisci beatae officiis eveniet non nostrum voluptas
+            architecto, dolor, dolorem sed, eius ea iure.</p>
+    </div>
+</div>
+
+<div class="backdrop is-hidden" data-modal data-id="privacy">
+    <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+            <svg class="icon-close">
+                <use href="img/svgicons/sprite/svg-sprite.svg#cross-icon"></use>
+            </svg>
+        </button>
+
+        <!-- Content -->
+        <h2>Privacy</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ducimus excepturi id velit fugit suscipit beatae.
+            Iusto, voluptatum. Voluptatibus, voluptatum! Inventore ex ut tempore corporis tenetur, error ducimus. Dolor
+            autem recusandae tempore? At corporis unde debitis adipisci beatae officiis eveniet non nostrum voluptas
+            architecto, dolor, dolorem sed, eius ea iure.</p>
+    </div>
+</div>
+
+<div class="backdrop is-hidden" data-modal data-id="cookies">
+    <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+            <svg class="icon-close">
+                <use href="img/svgicons/sprite/svg-sprite.svg#cross-icon"></use>
+            </svg>
+        </button>
+
+        <!-- Content -->
+        <h2>Cookies</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ducimus excepturi id velit fugit suscipit beatae.
+            Iusto, voluptatum. Voluptatibus, voluptatum! Inventore ex ut tempore corporis tenetur, error ducimus. Dolor
+            autem recusandae tempore? At corporis unde debitis adipisci beatae officiis eveniet non nostrum voluptas
+            architecto, dolor, dolorem sed, eius ea iure.</p>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=@@DT@@"></script>
+</body>
+
+</html>
