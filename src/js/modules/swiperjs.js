@@ -29,7 +29,7 @@ const swiperjs = () => {
                 return;
             }
         } else {
-            if (init) {
+            if (init && slider1) {
                 swiper.destroy();
                 init = false;
             } else {

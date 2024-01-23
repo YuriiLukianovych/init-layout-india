@@ -1,0 +1,67 @@
+.flatpickr-calendar {
+    .flatpickr-day.selected,
+    .flatpickr-weekdays,
+    span.flatpickr-weekday,
+    .flatpickr-month,
+    .flatpickr-current-month .flatpickr-monthDropdown-months,
+    .flatpickr-current-month
+        .flatpickr-monthDropdown-months
+        .flatpickr-monthDropdown-month {
+        background-color: var(--org-primary-dark-normal);
+    }
+
+    .flatpickr-months .flatpickr-next-month:hover svg,
+    .flatpickr-months .flatpickr-prev-month:hover svg {
+        fill: #ffffff;
+    }
+
+    @media screen and (max-width: 374.9px) {
+        max-width: 320px !important;
+        width: 250px !important;
+
+        .flatpickr-day {
+            border-radius: 50%;
+            height: 35px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 12px;
+        }
+        &.animate.open,
+        & animate arrowLeft arrowTop centerMost open {
+            left: 34px !important;
+            width: 250px !important;
+            min-width: 250px !important;
+            max-width: 250px !important;
+            overflow: hidden;
+        }
+        .flatpickr-months,
+        .dayContainer {
+            width: 250px;
+            min-width: 250px;
+            max-width: 250px;
+        }
+        .flatpickr-innerContainer,
+        .flatpickr-rContainer,
+        .flatpickr-weekdays {
+            width: 250px;
+        }
+
+        .flatpickr-current-month {
+            width: 55%;
+
+            display: flex;
+            align-items: center;
+        }
+        .flatpickr-current-month input.cur-year {
+            width: 70px;
+            font-size: 16px;
+        }
+
+        .flatpickr-current-month .flatpickr-monthDropdown-months {
+            font-size: 14px;
+        }
+    }
+}

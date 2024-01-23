@@ -26,6 +26,9 @@ const scrollToAnchors = () => {
             // отримати достув в DOM до елемента по отриманому id
             // get access to the element in the DOM by the received id
             const ourElem = document.querySelector(blockID);
+            if (!ourElem) {
+                return;
+            }
             // отримати його координати
             // get its coordinates
             const blockIDcoords = getCoords(ourElem);

@@ -9,6 +9,7 @@ import swiperjs from "./modules/swiperjs.js";
 import mobileMenu from "./modules/mobile-menu.js";
 import swiper2js from "./modules/swiper2.js";
 import datePicker from "./modules/date-picker.js";
+import detailPageTabs from "./modules/detail-page-tabs.js";
 
 helpFunctions.isWebp();
 
@@ -22,3 +23,4 @@ swiperjs();
 swiper2js();
 mobileMenu();
 datePicker();
+detailPageTabs();

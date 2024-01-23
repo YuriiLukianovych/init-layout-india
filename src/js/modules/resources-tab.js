@@ -4,6 +4,10 @@ const resourcesTabs = () => {
         ".resources__tabs-body-item"
     );
 
+    if (!tabs || !contantsList) {
+        return;
+    }
+
     tabs.forEach((tab) => {
         tab.addEventListener("click", (e) => {
             const id = e.target.dataset.id;

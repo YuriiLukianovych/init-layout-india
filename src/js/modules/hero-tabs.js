@@ -1,6 +1,10 @@
 const heroTabs = () => {
-    const tabs = document.querySelectorAll(".hero__tabs-item");
-    const tabsBody = document.querySelector(".hero__tabs-body");
+    const tabs = document.querySelectorAll(".hero__tabs-item") || null;
+    const tabsBody = document.querySelector(".hero__tabs-body") || null;
+
+    if (!tabs || !tabsBody) {
+        return;
+    }
 
     tabs.forEach((tab) => {
         tab.addEventListener("click", (e) => {

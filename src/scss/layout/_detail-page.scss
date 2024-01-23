@@ -354,7 +354,7 @@
         }
     }
 
-    &__tabs-body {
+    &__tabs-body-item {
         display: flex;
         gap: 40px;
 
@@ -747,12 +747,23 @@
             border: 1px solid rgba(150, 160, 182, 0.5);
             padding: 6px 16px;
             padding-left: 48px;
+            box-shadow: none;
+            outline: none;
 
             display: flex;
             align-items: center;
             width: 100%;
 
             color: var(--blue-secondary-dark-normal);
+            background-color: var(--other-light-normal);
+            transition: var(--transition-250);
+
+            &:hover,
+            &:focus {
+                box-shadow: none;
+                outline: none;
+                border: 1px solid var(--org-primary-dark-normal);
+            }
         }
 
         .date-wrapper {
@@ -784,12 +795,20 @@
 
             color: var(--blue-secondary-dark-normal);
         }
+        .mobile-icon-fixed {
+            height: 40px;
+            width: 15px;
+            background-color: var(--other-light-normal);
+
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            right: 2px;
+            transform: translateY(-50%);
+        }
     }
 
-    &__vr-content {
-    }
-
-    &__date-value {
+    &__tabs-body-item {
     }
 }
 
