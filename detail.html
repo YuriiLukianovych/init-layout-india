@@ -262,109 +262,121 @@
                         <div class="facilities__tabs-header">
                             <ul class="facilities__tabs-list">
                                 <li>
-                                    <button class="facilities__btn clear-btn heading-11 active"
-                                        type="button">Nearby</button>
+                                    <button class="facilities__btn clear-btn heading-11 active" type="button"
+                                        data-id="nearby">Nearby</button>
                                 </li>
                                 <li>
-                                    <button class="facilities__btn clear-btn heading-11"
-                                        type="button">Transportation</button>
+                                    <button class="facilities__btn clear-btn heading-11" type="button"
+                                        data-id="transportation">Transportation</button>
                                 </li>
                                 <li>
-                                    <button class="facilities__btn clear-btn heading-11" type="button">Shopping</button>
+                                    <button class="facilities__btn clear-btn heading-11" type="button"
+                                        data-id="shopping">Shopping</button>
                                 </li>
                                 <li>
-                                    <button class="facilities__btn clear-btn heading-11" type="button">Health</button>
+                                    <button class="facilities__btn clear-btn heading-11" type="button"
+                                        data-id="health">Health</button>
                                 </li>
                                 <li>
-                                    <button class="facilities__btn clear-btn heading-11" type="button">Catering</button>
+                                    <button class="facilities__btn clear-btn heading-11" type="button"
+                                        data-id="catering">Catering</button>
                                 </li>
                                 <li>
-                                    <button class="facilities__btn clear-btn heading-11" type="button">More</button>
+                                    <button class="facilities__btn clear-btn heading-11" type="button"
+                                        data-id="more">More</button>
                                 </li>
                             </ul>
                         </div>
                         <div class="facilities__tabs-body">
-                            <ul class="facilities__list">
-                                <li class="facilities__list-item">
-                                    <div class="left">
-                                        <svg class="icon24">
-                                            <use href="img/svgicons/sprite/svg-sprite.svg#bus"></use>
-                                        </svg>
-                                        <span class="type heading-9">Bus Stop</span>
-                                    </div>
-                                    <div class="right">
-                                        <span class="adress">Ternm, Pod Kastons</span>
-                                        <span class="distance heading-5">1,8 km</span>
-                                    </div>
-                                </li>
-                                <li class="facilities__divider"></li>
-                                <li class="facilities__list-item">
-                                    <div class="left">
-                                        <svg class="icon24">
-                                            <use href="img/svgicons/sprite/svg-sprite.svg#coffee"></use>
-                                        </svg>
-                                        <span class="type heading-9">Cafe / Pub</span>
-                                    </div>
-                                    <div class="right">
-                                        <span class="adress">Veslo Cafebar</span>
-                                        <span class="distance heading-5">3,2 km</span>
-                                    </div>
-                                </li>
-                                <li class="facilities__divider"></li>
-                                <li class="facilities__list-item">
-                                    <div class="left">
-                                        <svg class="icon24">
-                                            <use href="img/svgicons/sprite/svg-sprite.svg#food"></use>
-                                        </svg>
-                                        <span class="type heading-9">Groceries</span>
-                                    </div>
-                                    <div class="right">
-                                        <span class="adress">Jednota COOP</span>
-                                        <span class="distance heading-5">4,3 km</span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <li class="facilities__divider d-column"></li>
-                            <ul class="facilities__list">
-                                <li class="facilities__list-item">
-                                    <div class="left">
-                                        <svg class="icon24">
-                                            <use href="img/svgicons/sprite/svg-sprite.svg#chef-hat"></use>
-                                        </svg>
-                                        <span class="type heading-9">Restaurant</span>
-                                    </div>
-                                    <div class="right">
-                                        <span class="adress">Ternm, Pod Kastons</span>
-                                        <span class="distance heading-5">1,8 km</span>
-                                    </div>
-                                </li>
-                                <li class="facilities__divider"></li>
-                                <li class="facilities__list-item">
-                                    <div class="left">
-                                        <svg class="icon24">
-                                            <use href="img/svgicons/sprite/svg-sprite.svg#mail"></use>
-                                        </svg>
-                                        <span class="type heading-9">Post office</span>
-                                    </div>
-                                    <div class="right">
-                                        <span class="adress">Veslo Cafebar</span>
-                                        <span class="distance heading-5">3,2 km</span>
-                                    </div>
-                                </li>
-                                <li class="facilities__divider"></li>
-                                <li class="facilities__list-item">
-                                    <div class="left">
-                                        <svg class="icon24">
-                                            <use href="img/svgicons/sprite/svg-sprite.svg#doctor"></use>
-                                        </svg>
-                                        <span class="type heading-9">Doctor</span>
-                                    </div>
-                                    <div class="right">
-                                        <span class="adress">Jednota COOP</span>
-                                        <span class="distance heading-5">4,3 km</span>
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="facilities__tabs-body-item" data-id="nearby">
+                                <ul class="facilities__list">
+                                    <li class="facilities__list-item">
+                                        <div class="left">
+                                            <svg class="icon24">
+                                                <use href="img/svgicons/sprite/svg-sprite.svg#bus"></use>
+                                            </svg>
+                                            <span class="type heading-9">Bus Stop</span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="adress">Ternm, Pod Kastons</span>
+                                            <span class="distance heading-5">1,8 km</span>
+                                        </div>
+                                    </li>
+                                    <li class="facilities__divider"></li>
+                                    <li class="facilities__list-item">
+                                        <div class="left">
+                                            <svg class="icon24">
+                                                <use href="img/svgicons/sprite/svg-sprite.svg#coffee"></use>
+                                            </svg>
+                                            <span class="type heading-9">Cafe / Pub</span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="adress">Veslo Cafebar</span>
+                                            <span class="distance heading-5">3,2 km</span>
+                                        </div>
+                                    </li>
+                                    <li class="facilities__divider"></li>
+                                    <li class="facilities__list-item">
+                                        <div class="left">
+                                            <svg class="icon24">
+                                                <use href="img/svgicons/sprite/svg-sprite.svg#food"></use>
+                                            </svg>
+                                            <span class="type heading-9">Groceries</span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="adress">Jednota COOP</span>
+                                            <span class="distance heading-5">4,3 km</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <li class="facilities__divider d-column"></li>
+                                <ul class="facilities__list">
+                                    <li class="facilities__list-item">
+                                        <div class="left">
+                                            <svg class="icon24">
+                                                <use href="img/svgicons/sprite/svg-sprite.svg#chef-hat"></use>
+                                            </svg>
+                                            <span class="type heading-9">Restaurant</span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="adress">Ternm, Pod Kastons</span>
+                                            <span class="distance heading-5">1,8 km</span>
+                                        </div>
+                                    </li>
+                                    <li class="facilities__divider"></li>
+                                    <li class="facilities__list-item">
+                                        <div class="left">
+                                            <svg class="icon24">
+                                                <use href="img/svgicons/sprite/svg-sprite.svg#mail"></use>
+                                            </svg>
+                                            <span class="type heading-9">Post office</span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="adress">Veslo Cafebar</span>
+                                            <span class="distance heading-5">3,2 km</span>
+                                        </div>
+                                    </li>
+                                    <li class="facilities__divider"></li>
+                                    <li class="facilities__list-item">
+                                        <div class="left">
+                                            <svg class="icon24">
+                                                <use href="img/svgicons/sprite/svg-sprite.svg#doctor"></use>
+                                            </svg>
+                                            <span class="type heading-9">Doctor</span>
+                                        </div>
+                                        <div class="right">
+                                            <span class="adress">Jednota COOP</span>
+                                            <span class="distance heading-5">4,3 km</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="facilities__tabs-body-item dn" data-id="transportation">transportation list
+                            </div>
+                            <div class="facilities__tabs-body-item dn" data-id="shopping">shopping list</div>
+                            <div class="facilities__tabs-body-item dn" data-id="health">health list</div>
+                            <div class="facilities__tabs-body-item dn" data-id="catering">catering list</div>
+                            <div class="facilities__tabs-body-item dn" data-id="more">more list</div>
                         </div>
                     </div>
                 </div>
@@ -474,13 +486,13 @@
                         <h2 class="heading-5">Request a home tour</h2>
                         <div class="price-form__tabs">
                             <ul class="price-form__tabs-list">
-                                <li class="active">
+                                <li class="price-form__tabs-list-item active" data-id="virtual">
                                     <svg class="icon20">
                                         <use href="img/svgicons/sprite/svg-sprite.svg#vr"></use>
                                     </svg>
                                     <span class="heading-10">Virtual</span>
                                 </li>
-                                <li>
+                                <li class="price-form__tabs-list-item" data-id="person">
                                     <svg class="icon20">
                                         <use href="img/svgicons/sprite/svg-sprite.svg#comment"></use>
                                     </svg>
@@ -489,7 +501,7 @@
                             </ul>
 
                             <div class="price-form__tabs-body">
-                                <div class="price-form__vr-content">
+                                <div class="price-form__tabs-body-item" data-id="virtual">
                                     <div class="date-wrapper">
                                         <input class="date-input heading-11" type="text" id="date-input-virtual">
                                         <div class="date-icon-1">
@@ -502,6 +514,24 @@
                                                 <use href="img/svgicons/sprite/svg-sprite.svg#arrow-back"></use>
                                             </svg>
                                         </div>
+                                        <div class="mobile-icon-fixed"></div>
+                                    </div>
+                                </div>
+
+                                <div class="price-form__tabs-body-item dn" data-id="person">
+                                    <div class="date-wrapper">
+                                        <input class="date-input heading-11" type="text" id="date-input-in-person">
+                                        <div class="date-icon-1">
+                                            <svg class="icon20">
+                                                <use href="img/svgicons/sprite/svg-sprite.svg#calendar"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="date-icon-2">
+                                            <svg class="icon20">
+                                                <use href="img/svgicons/sprite/svg-sprite.svg#arrow-back"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="mobile-icon-fixed"></div>
                                     </div>
                                 </div>
                             </div>
