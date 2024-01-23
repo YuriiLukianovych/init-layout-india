@@ -1,6 +1,10 @@
 //styles from package Choices.js
 @import "../../node_modules/choices.js/src/styles/choices";
 
+//style for date input from package Flatpickr
+@import "../../node_modules/flatpickr/dist/flatpickr";
+@import "../../node_modules/flatpickr/dist/themes/confetti";
+
 // import Swiper styles
 @import "../../node_modules/swiper/swiper-bundle";
 
@@ -12,6 +16,7 @@
 
 // utils
 @import "./utils/variables";
+@import "./utils/visually-hidden";
 
 // components
 @import "./components/buttons";

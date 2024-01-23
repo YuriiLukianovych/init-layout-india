@@ -2,6 +2,7 @@
 import Swiper from "swiper/bundle";
 
 const swiperjs = () => {
+    const slider1 = document.querySelector(".swiper");
     let init = false;
     let swiper;
 
@@ -9,19 +10,21 @@ const swiperjs = () => {
         if (window.innerWidth >= 576) {
             if (!init) {
                 init = true;
-                swiper = new Swiper(".swiper", {
-                    loop: true,
-                    speed: 800,
-                    spaceBetween: 100,
-                    autoplay: {
-                        delay: 3000,
-                    },
+                swiper = slider1
+                    ? new Swiper(".swiper", {
+                          loop: true,
+                          speed: 800,
+                          spaceBetween: 100,
+                          autoplay: {
+                              delay: 3000,
+                          },
 
-                    pagination: {
-                        el: ".hero__slider-pagination",
-                        clickable: true,
-                    },
-                });
+                          pagination: {
+                              el: ".hero__slider-pagination",
+                              clickable: true,
+                          },
+                      })
+                    : null;
             } else {
                 return;
             }

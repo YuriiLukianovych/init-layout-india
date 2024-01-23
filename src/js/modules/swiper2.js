@@ -8,35 +8,37 @@ const swiper2js = () => {
     const container = awardsSection ? awardsSection.firstElementChild : null;
 
     //second slider in Awards Section
-    const swiper2 = new Swiper(".swiper2", {
-        loop: true,
-        speed: 800,
-        spaceBetween: 100,
-        autoplay: {
-            delay: 3000,
-        },
+    const swiper2 = slider2
+        ? new Swiper(".swiper2", {
+              loop: true,
+              speed: 800,
+              spaceBetween: 100,
+              autoplay: {
+                  delay: 3000,
+              },
 
-        pagination: {
-            el: ".awards__slider-pagination",
-            clickable: false,
-        },
+              pagination: {
+                  el: ".awards__slider-pagination",
+                  clickable: false,
+              },
 
-        // Navigation arrows
-        navigation: {
-            nextEl: ".swiper2-button-next",
-            prevEl: ".swiper2-button-prev",
-        },
+              // Navigation arrows
+              navigation: {
+                  nextEl: ".swiper2-button-next",
+                  prevEl: ".swiper2-button-prev",
+              },
 
-        breakpoints: {
-            // when window width is >= 768px
-            768: {
-                pagination: {
-                    el: ".awards__slider-pagination",
-                    clickable: true,
-                },
-            },
-        },
-    });
+              breakpoints: {
+                  // when window width is >= 768px
+                  768: {
+                      pagination: {
+                          el: ".awards__slider-pagination",
+                          clickable: true,
+                      },
+                  },
+              },
+          })
+        : null;
 
     // slider2 width:
     swiperCard2();

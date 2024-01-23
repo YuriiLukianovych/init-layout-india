@@ -119,6 +119,10 @@
         position: absolute;
         top: -12px;
         right: -12px;
+
+        @media screen and (max-width: 991.9px) {
+            right: 12px;
+        }
     }
 
     &__image-controls {
@@ -147,6 +151,7 @@
 
                 @media screen and (max-width: 420.9px) {
                     width: max-content;
+                    padding: 3px 6px;
                 }
 
                 svg {
@@ -741,18 +746,43 @@
             border-radius: 8px;
             border: 1px solid rgba(150, 160, 182, 0.5);
             padding: 6px 16px;
+            padding-left: 48px;
 
             display: flex;
             align-items: center;
             width: 100%;
 
-            &::-webkit-datetime-edit-fields-wrapper {
-                display: none;
-            }
-            &::-webkit-calendar-picker-indicator {
-                background-image: url("@img/svgicons/arrow-back.svg");
-                transform: rotate(-90deg);
-            }
+            color: var(--blue-secondary-dark-normal);
+        }
+
+        .date-wrapper {
+            position: relative;
+        }
+        .date-icon-1 {
+            pointer-events: none;
+            position: absolute;
+            top: 48%;
+            left: 16px;
+            transform: translateY(-50%);
+
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            color: var(--blue-secondary-dark-normal);
+        }
+        .date-icon-2 {
+            pointer-events: none;
+            position: absolute;
+            top: 48%;
+            right: 16px;
+            transform: translateY(-50%) rotate(-90deg);
+
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            color: var(--blue-secondary-dark-normal);
         }
     }
 
@@ -762,21 +792,7 @@
     &__date-value {
     }
 }
-.date-wrapper {
-    position: relative;
-}
-.date-info {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
 
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    color: var(--blue-secondary-dark-normal);
-}
 .form {
     width: 100%;
     display: flex;

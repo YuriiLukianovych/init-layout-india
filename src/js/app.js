@@ -8,6 +8,7 @@ import scrollToTop from "./modules/scroll-to-top.js";
 import swiperjs from "./modules/swiperjs.js";
 import mobileMenu from "./modules/mobile-menu.js";
 import swiper2js from "./modules/swiper2.js";
+import datePicker from "./modules/date-picker.js";
 
 helpFunctions.isWebp();
 
@@ -20,3 +21,4 @@ scrollToTop();
 swiperjs();
 swiper2js();
 mobileMenu();
+datePicker();
